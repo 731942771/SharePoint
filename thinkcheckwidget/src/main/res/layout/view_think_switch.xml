@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_switch"
+    android:layout_width="wrap_content"
+    android:padding="10dp"
+    android:layout_height="wrap_content"
+    android:background="#ffffff" >
+
+    <TextView
+        android:id="@+id/switch_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#dd3300"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/switch_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/switch_title"
+        android:layout_marginTop="5dp"
+        android:textColor="#ff9933"
+        android:textSize="12dp" />
+
+    <CheckBox
+        android:id="@+id/switch_checked"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

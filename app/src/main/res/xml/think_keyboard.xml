@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:horizontalGap="1dp"
+    android:keyHeight="5%p"
+    android:verticalGap="1dp">
+    <!-- android:keyWidth="33.3%p"   // 每个按钮的宽。%30p屏幕宽的百分比，或dp、px
+         android:keyHeight="100dp"    //每个按钮高度。 -->
+
+    <!-- 行 -->
+    <Row>
+        <!--
+        codes：onKey()输出
+        keyLabel：屏幕显示
+        keyWidth：按钮宽度
+        keyOutputText：OnText()输出
+        keyEdgeFlags="right" ：swipeRight()输出
+        keyIcon：设置图标 -->
+        <Key
+            android:codes="0"
+            android:keyLabel="0" />
+        <Key
+            android:codes="1"
+            android:keyLabel="1" />
+        <Key
+            android:codes="2"
+            android:keyLabel="2" />
+        <Key
+            android:codes="3"
+            android:keyLabel="3" />
+        <Key
+            android:codes="4"
+            android:keyLabel="4" />
+        <Key
+            android:codes="5"
+            android:keyLabel="5" />
+        <Key
+            android:codes="6"
+            android:keyLabel="6" />
+        <Key
+            android:codes="7"
+            android:keyLabel="7" />
+        <Key
+            android:codes="8"
+            android:keyLabel="8" />
+        <Key
+            android:codes="9"
+            android:keyLabel="9" />
+    </Row>
+    <Row>
+        <Key
+            android:codes="q"
+            android:keyLabel="q" />
+        <Key
+            android:codes="w"
+            android:keyLabel="w" />
+        <Key
+            android:codes="e"
+            android:keyLabel="e" />
+        <Key
+            android:codes="r"
+            android:keyLabel="r" />
+        <Key
+            android:codes="t"
+            android:keyLabel="t" />
+        <Key
+            android:codes="y"
+            android:keyLabel="y" />
+        <Key
+            android:codes="u"
+            android:keyLabel="u" />
+        <Key
+            android:codes="i"
+            android:keyLabel="i" />
+        <Key
+            android:codes="o"
+            android:keyLabel="o" />
+        <Key
+            android:codes="p"
+            android:keyLabel="p" />
+    </Row>
+    <Row>
+
+        <Key
+            android:codes="a"
+            android:keyLabel="a" />
+        <Key
+            android:codes="s"
+            android:keyLabel="s" />
+        <Key
+            android:codes="d"
+            android:keyLabel="d" />
+        <Key
+            android:codes="f"
+            android:keyLabel="f" />
+        <Key
+            android:codes="g"
+            android:keyLabel="g" />
+        <Key
+            android:codes="h"
+            android:keyLabel="h" />
+        <Key
+            android:codes="j"
+            android:keyLabel="j" />
+        <Key
+            android:codes="k"
+            android:keyLabel="k" />
+        <Key
+            android:codes="l"
+            android:keyLabel="l" />
+    </Row>
+    <Row>
+
+        <Key
+            android:codes="z"
+            android:keyLabel="z" />
+        <Key
+            android:codes="x"
+            android:keyLabel="x" />
+        <Key
+            android:codes="c"
+            android:keyLabel="c" />
+        <Key
+            android:codes="v"
+            android:keyLabel="v" />
+        <Key
+            android:codes="b"
+            android:keyLabel="b" />
+        <Key
+            android:codes="n"
+            android:keyLabel="n" />
+        <Key
+            android:codes="m"
+            android:keyLabel="m" />
+        <Key
+            android:codes=":"
+            android:keyLabel=":" />
+        <Key
+            android:codes="/"
+            android:keyLabel="/" />
+    </Row>
+</Keyboard>

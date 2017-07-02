@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:auto="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff9933"
+    android:descendantFocusability="beforeDescendants"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:background="@null" />
+
+    <LinearLayout
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="目录URL"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.cuiweiyou.thinkcheckwidget.ThinkSwitchWidget
+            android:id="@+id/thinkswitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            auto:think_switch_off="现在使用你自定义的URL，或选择网友的URL"
+            auto:think_switch_on="现在使用默认URL"
+            auto:think_switch_title="使用默认目录URL" />
+
+        <LinearLayout
+            android:id="@+id/lyt_udfurl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5px"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cburl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="自定义目录："
+                    android:textColor="#ff9933" />
+
+                <EditText
+                    android:id="@+id/udfurl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:digits="0123456789abcdefghigklmnopqrstuvwxyz:/.=-"
+                    android:hint="手动输入目录url"
+                    android:textColor="#ff9933"
+                    android:textColorHint="#aa6633" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/upurl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="直接向SharePoint提交目录"
+                    android:textColor="#ff9933" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="查看关于本应用，通过邮箱提交"
+                    android:textColor="#ff9933" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lyt_neturl"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_marginTop="5px"
+            android:layout_weight="1"
+            android:background="#ff9933"
+            android:orientation="vertical"
+            android:paddingBottom="40dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="网友提供的目录URL："
+                android:textColor="#ffffff" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_neturl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/keyboardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:keyPreviewLayout="@layout/key_preview_layout"
+        android:visibility="gone" />
+    <!-- keyPreviewLayout可无。尽在setPreview后有效 -->
+</LinearLayout>

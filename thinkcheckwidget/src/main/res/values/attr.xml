@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <declare-styleable name="com.cuiweiyou.thinkcheckwidget">
+        <attr name="think_switch_title" format="string" />
+        <attr name="think_switch_on" format="string" />
+        <attr name="think_switch_off" format="string" />
+    </declare-styleable>
+</resources>
