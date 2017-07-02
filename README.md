@@ -1,8 +1,8 @@
-![SharePoint](splogo.png)
+![SharePoint](splogo.png)<br/>
 SharePoint是什么?
 ====
 创建一个中心点，将不同的线连接起来，每条线的末端都是一个分享体、使用体。
-初始是做个有“Think in Kotlin”的应用，能够让每个人分享自己的经验，学习别人的经验。随着设计成型，发现这个应用可不仅限于Kotlin的学习。只要是你希望呈现的内容，都可以通过这个中心点展示给别人。
+初始是做个有“Think in Kotlin”的应用，能够让每个人分享自己的经验，学习别人的经验。随着设计成型，发现这个应用可不仅限于Kotlin的学习。只要是你希望呈现的内容，都可以通过这个中心点展示给别人。<br/>
 ![SharePoint](about.png)
 
 如何使用
@@ -123,7 +123,7 @@ SharePoint是什么?
 
 支持开发者
 ====
-做这个也有5年了，推荐个安卓开发岗位吧 ;) 。
+We can talk about job ;)<br/>
 ![微信](weixin.png)
 
 感激
